@@ -1,6 +1,6 @@
 # webrtc-example
 
-This is just an example usage of the WenRTC API.
+This is just an example usage of the WebRTC API.
 
 Public STUN servers used
 
