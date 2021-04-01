@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webrtc-example</title>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <input id="input" />
+    <label for="input">Label</label>
+    <button id="createRoom">create room</button>
+    <button id="joinRoom">join room</button>
+
+    <video id="local" autoplay height="320px" width="320px"></video>
+    <video id="remote" autoplay height="320px" width="320px"></video>
+    <script src="./main.js"></script>
+  </body>
+</html>
