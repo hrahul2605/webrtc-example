@@ -1,3 +1,4 @@
+const input = document.getElementById("roomID");
 const socket = io();
 
 const iceConfigation = {
@@ -52,7 +53,7 @@ const getMedia = async () => {
 };
 
 const handleJoinRoom = async () => {
-  socket.emit("join", { roomID: "1" });
+  socket.emit("join", { roomID: input.value || "1" });
   await getMedia();
 
   const offer = await connection.createOffer();
@@ -79,7 +80,6 @@ socket.on("recieveAnswer", async ({ id, answer }) => {
 });
 
 connection.ontrack = (e) => {
-  console.log(e);
   remoteStream.addTrack(e.track, remoteStream);
   document.querySelector("video#remote").srcObject = remoteStream;
 };

@@ -8,13 +8,12 @@
     <script src="/socket.io/socket.io.js"></script>
   </head>
   <body>
-    <input id="input" />
-    <label for="input">Label</label>
-    <button id="createRoom">create room</button>
+    <input id="roomID" />
+    <label for="input">Enter any room ID, or just join to default</label>
     <button id="joinRoom">join room</button>
 
     <video id="local" autoplay height="320px" width="320px" muted></video>
-    <video id="remote" autoplay height="320px" width="320px"></video>
+    <video id="remote" autoplay></video>
     <script src="./main.js"></script>
   </body>
 </html>
